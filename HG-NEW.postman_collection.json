@@ -1,0 +1,772 @@
+{
+	"info": {
+		"_postman_id": "bcea7e7f-55ba-4c63-8983-cd33200c32fc",
+		"name": "HG-NEW",
+		"description": "皇冠体育",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HG获取token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "passkey",
+						"value": "K4JqAweMD0",
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"type": "text"
+					},
+					{
+						"key": "langs",
+						"value": "1",
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"type": "text"
+					},
+					{
+						"key": "prefix",
+						"value": "xd5",
+						"description": "前缀代码：xd5（测试环境）",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_TOKEN/GET_INSTANT_DATA",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_TOKEN",
+						"GET_INSTANT_DATA"
+					]
+				},
+				"description": "REGISTER_MEM\nGET_ACCESS_KEY\nGET_CCL\nGET_DEPOSIT\nGET_WITHDRAW\nGET_KICK_USER\nUTD_MEM_STATUS\nGET_FUND_TRANSFER_STATUS\nGET_DEPOSIT_WITHDRAWAL_DATA\nGET_SPORT_EVENT\nGET_STATEMENT\nGET_SINGLE_TRANSACTION\nGET_INSTANT_DATA\nGET_TRANSACTION_DATA\n公司代码\ttestapi2\n前缀代码\txd5\n安全密钥\tK4JqAweMD0\nAPI 链接\tdat.178api.com/api\n体育博彩链接\tvce.sport1618.com\nURL\thttp://sag.uv128.com\n用户名\txd5\n密码\tK4JqAweMD0"
+			},
+			"response": []
+		},
+		{
+			"name": "HG获取交易记录 (交易)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "passkey",
+						"value": "K4JqAweMD0",
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"type": "text"
+					},
+					{
+						"key": "langs",
+						"value": "1",
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"type": "text"
+					},
+					{
+						"key": "prefix",
+						"value": "xd5",
+						"description": "前缀代码：xd5（测试环境）",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "15657589527254141029",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_TRANSACTION_DATA/3/1/20190814_002000/20190814_003000/1",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_TRANSACTION_DATA",
+						"3",
+						"1",
+						"20190814_002000",
+						"20190814_003000",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG注册新账号",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657632158531234958"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/REGISTER_MEM/xd58bet4a85743/RMB/xd58bet4a85743",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"REGISTER_MEM",
+						"xd58bet4a85743",
+						"RMB",
+						"xd58bet4a85743"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG登入",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657641575087798650"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_ACCESS_KEY/xd58bet4a85743/RMB_TEST",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_ACCESS_KEY",
+						"xd58bet4a85743",
+						"RMB_TEST"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG查询余额",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657643004646657016"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_CCL/xd58bet4a85743",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_CCL",
+						"xd58bet4a85743"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG存款",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657645533797376092"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_DEPOSIT/HG-1565764500000/xd58bet4a85743/RMB/1",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_DEPOSIT",
+						"HG-1565764500000",
+						"xd58bet4a85743",
+						"RMB",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG提款",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657647135572433205"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_WITHDRAW/HGW-1565764500000/xd58bet4a85743/RMB/1",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_WITHDRAW",
+						"HGW-1565764500000",
+						"xd58bet4a85743",
+						"RMB",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG登出在线会员",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657648666467591898"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_KICK_USER/2/xd58bet4a85743",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_KICK_USER",
+						"2",
+						"xd58bet4a85743"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG更改会员状态",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657649693587392008"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/UTD_MEM_STATUS/xd58bet4a85743/1",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"UTD_MEM_STATUS",
+						"xd58bet4a85743",
+						"1"
+					]
+				},
+				"description": "0：冻结\n1：激活"
+			},
+			"response": []
+		},
+		{
+			"name": "HG暂停会员下注",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657651562885136475"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/UTD_PAUSE_MEM/xd58bet4a85743/0",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"UTD_PAUSE_MEM",
+						"xd58bet4a85743",
+						"0"
+					]
+				},
+				"description": "0：激活\n1：暂停"
+			},
+			"response": []
+		},
+		{
+			"name": "HG查询转账状态",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657653075125441430"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_FUND_TRANSFER_STATUS/HG-1565764500000",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_FUND_TRANSFER_STATUS",
+						"HG-1565764500000"
+					]
+				},
+				"description": "0：激活\n1：暂停"
+			},
+			"response": []
+		},
+		{
+			"name": "HG获取存款和提款记录",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657655078681423613"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_DEPOSIT_WITHDRAWAL_DATA/xd58bet4a85743/1/20190814_000000/20190814_235959/1",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_DEPOSIT_WITHDRAWAL_DATA",
+						"xd58bet4a85743",
+						"1",
+						"20190814_000000",
+						"20190814_235959",
+						"1"
+					]
+				},
+				"description": "例子 (日期)\n/GET_DEPOSIT_WITHDRAWAL_DATA/xd58bet4a85743/1/20190814_000000/20190814_235959/1\n例子（交易 ID）\n/GET_DEPOSIT_WITHDRAWAL_DATA/xd5testaccount10/2/123456789"
+			},
+			"response": []
+		},
+		{
+			"name": "HG获取赛事资料",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657657734972725455"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_SPORT_EVENT/SC/748546",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_SPORT_EVENT",
+						"SC",
+						"748546"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG获取会员帐目详情",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657659177272279317"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_STATEMENT/xd58bet4a85743/20190814/1",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_STATEMENT",
+						"xd58bet4a85743",
+						"20190814",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HG获取即时注单 (交易)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"type": "text",
+						"value": "15657662063727064019"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_INSTANT_DATA/2/20190814_000000/1",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_INSTANT_DATA",
+						"2",
+						"20190814_000000",
+						"1"
+					]
+				},
+				"description": "例子 (request tid)\r\n/GET_INSTANT_DATA/1/188/1\r\n例子 (日期时间)\r\n/GET_INSTANT_DATA/2/20181023_003000/1"
+			},
+			"response": []
+		},
+		{
+			"name": "HG获取单一注单",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "安全密钥：K4JqAweMD0（测试环境）",
+						"key": "passkey",
+						"type": "text",
+						"value": "K4JqAweMD0"
+					},
+					{
+						"description": "langs:\n1 -> 英文\n2 -> 简体中文\n3 -> 繁體中文",
+						"key": "langs",
+						"type": "text",
+						"value": "1"
+					},
+					{
+						"description": "前缀代码：xd5（测试环境）",
+						"key": "prefix",
+						"type": "text",
+						"value": "xd5"
+					},
+					{
+						"key": "token",
+						"value": "15657628541159569530",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dat.178api.com/api/GET_SINGLE_TRANSACTION/2576",
+					"protocol": "http",
+					"host": [
+						"dat",
+						"178api",
+						"com"
+					],
+					"path": [
+						"api",
+						"GET_SINGLE_TRANSACTION",
+						"2576"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
